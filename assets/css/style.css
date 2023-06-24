@@ -16,3 +16,32 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
+
+.section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.backdrop {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, red, yello);
+}
+
+/* #intro {
+  background-image: url(../images/robots-among-us.png);
+}
+
+#new {
+  background-image: url(../images/evou-robots.png);
+}
+
+#used {
+  background-image: url(../images/refurbished-robots.png);
+}
+
+#like-us {
+  background-image: url(../images/robots-among-us-2.png);
+} */
