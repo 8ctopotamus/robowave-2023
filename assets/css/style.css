@@ -1,4 +1,18 @@
+:root {
+  --outerSpace: #333738;
+  --rawSienna: #D08956;
+  --horizon: #5B909D;
+  --gulfStream: #82ABAF;
+  --yellowGreen: #9BC53D;
+  --thulianPink: #E56399;
+}
+
 body {
-  background: darkslateblue;
-  color: limegreen;
+  font-family: 'Oxanium', monospace;
+  background: var(--outerSpace);
+  color: var(--gulfStream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
