@@ -76,17 +76,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro {
+  border-left: 22px solid var(--horizon);
   background-image: url(../images//large/robot-on-rocks.jpg);
 }
 
 #new {
+  border-left: 22px solid var(--yellowGreen);
   background-image: url(../images/large/evou-robots.jpg);
 }
 
 #used {
+  border-left: 22px solid var(--rawSienna);
   background-image: url(../images/large/refurbished-robots.jpg);
 }
 
 #like-us {
+  border-left: 22px solid var(--yellowGreen);
   background-image: url(../images/large/robots-among-us-2.jpg);
 }
