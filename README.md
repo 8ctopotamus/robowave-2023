@@ -7,7 +7,6 @@ A ficticious robot company website for a Bootstrap, jQuery code-along in class.
 * [Fullpage scroll](https://alvarotrigo.com/fullPage/#)
 * [Typewriter.js](https://safi.me.uk/typewriterjs/)
 * [Power Glitch](https://github.com/7PH/powerglitch)
-* [Chart.js](https://github.com/chartjs/Chart.js)
 * [Oxanium Google Font](https://fonts.google.com/specimen/Oxanium)
 
 ## Wireframe

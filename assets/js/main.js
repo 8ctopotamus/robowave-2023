@@ -9,7 +9,7 @@ $(document).ready(function() {
     sectionsColor: ['#333738', '#333738', '#333738'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['Welcome', 'New', 'Used']
+    navigationTooltips: ['Welcome', 'New', 'Used'],
   })
 
   // typewriter effect

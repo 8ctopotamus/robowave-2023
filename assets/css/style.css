@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-success {
+  color: black;
   background-color: var(--yellowGreen) !important;
 }
 
@@ -55,14 +56,19 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--yellowGreen) !important;
 }
 
+.bg-translucent {
+  background: rgba(0,0,0,.4);
+}
+
 /* custom styles */
 
 .section {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
 }
 
+/* style the dots */
 #fp-nav ul li a span {
   background: white;
 }
@@ -73,6 +79,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
   background: linear-gradient(90deg, black 0%, rgba(0,0,0,0.25) 100%); 
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #intro {
@@ -93,4 +101,13 @@ h1, h2, h3, h4, h5, h6 {
 #like-us {
   border-left: 22px solid var(--yellowGreen);
   background-image: url(../images/large/robots-among-us-2.jpg);
+}
+
+@media (max-width: 767px) {
+  .fp-overflow {
+    display: block;
+  }
+  .section {
+    border-left-width: 2px;
+  }
 }
