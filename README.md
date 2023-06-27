@@ -7,18 +7,12 @@ A ficticious robot company website for a Bootstrap, jQuery code-along in class.
 * [Fullpage scroll](https://alvarotrigo.com/fullPage/#)
 * [Typewriter.js](https://safi.me.uk/typewriterjs/)
 * [Power Glitch](https://github.com/7PH/powerglitch)
+* [MomentJS](https://momentjs.com/docs/)
 * [Oxanium Google Font](https://fonts.google.com/specimen/Oxanium)
 
 ## Wireframe
 
 ![wireframe](./assets/images/wireframe.png)
-
-## TODOs
-
-* [x] Large background image sections
-* [ ] Image thumbnail navigation
-* [ ] Headings typewriter effect
-* [ ] modal with robot details
 
 ## Shout outs 📢
 

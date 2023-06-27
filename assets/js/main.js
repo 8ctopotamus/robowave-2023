@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // use fullpage_api to navigate around sections
   $('#intro .btn').on('click', function() {
     fullpage_api.moveSectionDown()
   })
@@ -27,5 +28,22 @@ $(document).ready(function() {
   PowerGlitch.glitch('.glitch', {
     // playMode: 'hover',
     hideOverflow: true,
+  })
+
+  // show days since error free
+  const today = moment()
+  $('[data-errorFreeDate]').each(function() {
+    let errorFreeDate = $(this).attr('data-errorFreeDate')
+    errorFreeDate = moment(errorFreeDate)
+    const diff = today.diff(errorFreeDate, 'days')
+    let diffClass = 'text-success'
+    if (diff < 5) {
+      diffClass = 'text-danger'
+    } else if (diff < 150) (
+      diffClass = 'text-warning'
+    )
+    $(this)
+      .text(`Error free for ${diff} days`)
+      .addClass(diffClass) 
   })
 })
