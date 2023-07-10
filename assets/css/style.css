@@ -57,15 +57,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-translucent {
-  background: rgba(0,0,0,.4);
+  background: rgba(0,0,0,.55);
 }
 
 /* custom styles */
 
-.section {
+.section, #signup-thankyou-page, #delivery-estimate-page {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;  
+}
+
+#signup-thankyou-page {
+  height: 100vh;
+  background-image: url('../images/large/robots-among-us.jpg');
+}
+
+#delivery-estimate-page {
+  height: 100vh;
+  background-image: url('../images/large/robot-variations.jpg');
 }
 
 /* style the dots */
