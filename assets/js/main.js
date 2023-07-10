@@ -30,20 +30,28 @@ $(document).ready(function() {
     hideOverflow: true,
   })
 
-  // show days since error free
-  const today = moment()
-  $('[data-errorFreeDate]').each(function() {
-    let errorFreeDate = $(this).attr('data-errorFreeDate')
-    errorFreeDate = moment(errorFreeDate)
-    const diff = today.diff(errorFreeDate, 'days')
-    let diffClass = 'text-success'
+  // last error date
+  $('[data-lastErrorDate]').each(function() {
+    // get date from data-lastErrorDate
+    var errDate = $(this).attr('data-lastErrorDate')
+    // turn date into dayjs object
+    errDate = dayjs(errDate)
+    // get the today's date as a dayjs object
+    var today = dayjs()
+    // find difference in days between days
+    var diff = today.diff(errDate, 'day')
+    // determine text color class
+    var textClass
     if (diff < 5) {
-      diffClass = 'text-danger'
-    } else if (diff < 150) (
-      diffClass = 'text-warning'
-    )
+      textClass = 'text-danger'
+    } else if (diff < 30) {
+      textClass = 'text-warning'
+    } else {
+      textClass = 'text-success'
+    }
+    // update paragraph
     $(this)
-      .text(`Error free for ${diff} days`)
-      .addClass(diffClass) 
+      .text(diff + " days since last error")
+      .addClass(textClass)
   })
 })
