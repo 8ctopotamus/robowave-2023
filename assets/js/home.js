@@ -54,4 +54,32 @@ $(document).ready(function() {
       .text(diff + " days since last error")
       .addClass(textClass)
   })
+
+  // signup form
+  $('#signup-form').on('submit', function(e) {
+    e.preventDefault()
+    const email = $('#email').val()
+    if (!email) {
+      alert('Missing Email')
+      return
+    }
+    // hit jsonplaceholder and create a user
+    fetch('https://jsonplaceholder.typicode.com/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+      })
+    })
+      .then(response => {
+        if (response.ok) {
+          window.location.assign(`/signup-thankyou.html?email=${email}`)
+        }
+      })
+      .catch(err => {
+        alert('Error creating user')
+      })
+  })
 })
