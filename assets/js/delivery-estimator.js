@@ -1,6 +1,6 @@
 const loading = document.getElementById('loading')
 
-const factoryAddress = 'Westminster Abbey, 20 Deans Yd, Westminster, London SW1P 3PA, United Kingdom'
+const factoryAddress = '20400 Mariani Ave, Cupertino, CA 95014, USA'
 const apiKey = 'FfjlQNSycwguu8hTigfcqloxlIRYU'
 
 function calculateShipping(distanceData, price) {
@@ -22,10 +22,10 @@ function getDistanceToFactory(destination, price) {
   
 function getParams() {
   const queryParams = new URLSearchParams(window.location.search)
+  const botName = queryParams.get('botName')
   const price = parseInt(queryParams.get('price'))
-  const state = queryParams.get('state')
-  const zip = queryParams.get('zip')
-  getDistanceToFactory(`632 E Locust St. Milwaukee Wi, 53212`, price)
+  
+  getDistanceToFactory(`918 Charleston Rd, Mountain View, CA 94043, USA`, price)
 }
 
-getParams()
+// getParams()
