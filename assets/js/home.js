@@ -48,4 +48,17 @@ $(document).ready(function() {
       .text(diff + " days since last error")
       .addClass(textClass)
   })
+
+//listen for summit event on sigup form
+
+
+
+
+
+
+
+
+
+
+
 });
