@@ -11,7 +11,7 @@ $(document).ready(function() {
   for (var i = 0; i < typewriterElements.length; i++) {
     var currentEl = typewriterElements[i]
     var innerText = currentEl.innerText
-    new Typewriter(currentEl, {
+    new Typewriter(currentEl, {            
       loop: true,
     })
       .typeString(innerText)
@@ -50,6 +50,7 @@ $(document).ready(function() {
   })
 
 //listen for summit event on sigup form
+//event.preventDefault()
 
 
 
